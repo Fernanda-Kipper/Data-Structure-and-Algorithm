@@ -22,7 +22,7 @@ To run this locally you should:
 - Install C Compiler such as GCC 
 
 ```
-git clone git@github.com:Fernanda-Kipper/Algorithm-and-Data-Structure.git
+git clone git@github.com:Fernanda-Kipper/Data-Structure-and-Algorithm.git
 cd project_name
 cd path_to_algorithm
 gcc filename.c -o a.exe
