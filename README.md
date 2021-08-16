@@ -7,7 +7,7 @@
  <a href="#license">License</a>
 </p>
 
-<h2 id="project" >Algorithm and Data Structure</h2>
+<h2 id="project">Data Structure and Algorithm</h2>
 
 This repository was created to store my every week learnings about Algorithm and Data Structure with C, such as dynamic memory allocation, insertion sort etc.
 
