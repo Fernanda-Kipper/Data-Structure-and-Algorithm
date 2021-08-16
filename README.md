@@ -13,7 +13,7 @@ This repository was created to store my every week learnings about Algorithm and
 
 <h2 id="algorithms">Learnings</h2>
 
-• <h5>1st week: review Dynamic Memory Allocation</h5>
+<h5>1st week: review Dynamic Memory Allocation</h5>
 
 <h2 id="clone" >Clone</h2>
 
