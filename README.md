@@ -1,4 +1,4 @@
-<h1 align="center"><img align="center" src="./public/images/logoDark.svg" width="400"></h1>
+<h1 align="center"><img align="center" src="./assets/banner.jpg" width="400"></h1>
 
 <p align="center">
  <a href="#project">Project</a> •
@@ -7,13 +7,17 @@
  <a href="#license">License</a>
 </p>
 
-<h2 id="project">Data Structure and Algorithm</h2>
+<h1 id="project">Data Structure and Algorithm</h1>
 
 This repository was created to store my every week learnings about Algorithm and Data Structure with C, such as dynamic memory allocation, insertion sort etc.
 
 <h2 id="algorithms">Learnings</h2>
 
-<h5>1st week: review Dynamic Memory Allocation</h5>
+<h3>1st week: review Dynamic Memory Allocation</h3>
+<h4> Store Names </h4>
+ This algorithm dynamic store names in one string, allowing the user to add, remove and list all names.
+<h4> Store Person </h4>
+ This algorithm dynamic store person in one person buffer, allowing the user to add, remove and list all person. Each person has 3 infos: name (char with 10 caracteres maximum), age (integer) and phone number (long integer)
 
 <h2 id="clone" >Clone</h2>
 
