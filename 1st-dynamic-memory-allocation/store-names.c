@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *names;
-void insert(void);
-void removeName(void);
-void print(void);
+void insertName(char *names);
+void removeName(char *names);
+void printNames(char *names);
 int menu(void);
 char* readString();
 
 int main()
 {
 	int chosen;
+  char *names;
   names = (char *)malloc(sizeof(char));
   names[0] = '\0';
 
@@ -19,13 +19,13 @@ int main()
 		chosen = menu();
 		switch (chosen) {
 		case 1:
-			insert();
+			insertName(names);
 			break;
 		case 2:
-			removeName();
+			removeName(names);
 			break;
 		case 3:
-			print();
+			printNames(names);
 			break;
 		case 4:
 			free(names);
@@ -76,8 +76,8 @@ char *readString()
   return string;
 }
 
-void removeName(){
-  char *name, *name_location, *second_names;
+void removeName(char *names){
+  char *name, *name_location, *second_names, *aux;
   int cont = 0, cont2 = 0, equal_letters = 0;
 
   printf("Digite o nome que deseja excluir: ");
@@ -123,21 +123,26 @@ void removeName(){
       }
       cont2++;
       second_names[cont2] = '\0';
-      strcpy(names, second_names);
-      names = realloc(names, sizeof(char) * cont2);
-      free(second_names);
+      aux = names;
+      names = second_names;
+      free(aux);
     }
   }
 
-  printf("\n---------NOVA LISTA---------\n %s", names);
+  printNames(names);
 }
 
-void insert(){
+void insertName(char *names){
   char *name;
   int cont = 0, cont2 = 0;
 
   printf("Digite o nome que deseja inserir: ");
   name = readString();
+
+  if((char *)realloc(names, sizeof(names) + sizeof(name)) == NULL){
+    printf("Nao foi possivel alocar mempria para o novo nome \n");
+    return;
+  }
   names = (char *)realloc(names, sizeof(names) + sizeof(name));
 
   while(names[cont] != '\0') cont++;
@@ -150,6 +155,6 @@ void insert(){
   names[cont] = '\0';
 }
 
-void print(){
-  printf("%s", names);
+void printNames(char *names){
+  printf("------ LISTA DE NOMES ------ \n%s", names);
 }
