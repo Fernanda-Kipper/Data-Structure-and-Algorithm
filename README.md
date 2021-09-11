@@ -20,24 +20,28 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 
 <h2 id="clone" >Clone this project</h2>
 
-<h4> To run this locally you need: </h4>
+<h4> Prerequisites</h4>
 
-- Install C Compiler such as GCC 
-- Install  GDB C Debugger
+- C Compiler such as GCC 
+- GDB C Debugger
 
-<h4> Clone and Run </h4>
+<h4> Clone </h4>
 
-```
+```bash
 git clone git@github.com:Fernanda-Kipper/Data-Structure-and-Algorithm.git
-cd project_name
-cd path_to_algorithm
+```
+
+<h4> Run </h4>
+
+```bash
 gcc filename.c -o a.exe
 ./a.exe
 ```
 
 <h4> Debbug </h4>
 
-- In the root directory
+In the root directory
+
 ```
 gcc filename.c -o a.exe -g
 PRESS F5
