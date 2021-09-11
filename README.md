@@ -11,9 +11,12 @@
  <h1 id="project" align="center">Data Structure and Algorithms</h1>
 </p>
 
-This repository has the aim to store knowledges about Algorithm and Data Structure in C. All the algororithms has memory leak debbuged with [DrMemory](https://drmemory.org/).
+This repository has the aim to store knowledge's about Algorithm and Data Structure in C. All the algorithms has memory leak debugged with [DrMemory](https://drmemory.org/).
 
 <h2 id="learnings">Learnings</h2>
+
+- Stack - Data Structure 
+  - Last in First Out
 
 <h2 id="clone" >Clone this project</h2>
 
