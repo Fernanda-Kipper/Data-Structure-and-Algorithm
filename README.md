@@ -15,6 +15,7 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 
 <h2 id="learnings">Learnings</h2>
 
+- Insertion Sort - Algorithm
 - Stack - Data Structure 
   - Last in First Out
 
