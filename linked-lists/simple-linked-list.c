@@ -46,6 +46,14 @@ void push(linkedList *list, int data)
   list->head = new_node;
 }
 
+int empty(linkedList *list){
+  // 1.Checks if head is null
+  if(list->head == NULL) return 1;
+
+  // 2. If not empty, return false
+  return 0;
+}
+
 int pop(linkedList *list){
   // 1. If there is none element
   if(empty(list) == 1) return 0;
@@ -66,15 +74,6 @@ int pop(linkedList *list){
   return data;
 }
 
-int empty(linkedList *list){
-  // 1.Checks if head is null
-  if(list->head == NULL) return 1;
-
-  // 2. If not empty, return false
-  return 0;
-}
-
-// This method is used to remove all the elements from a linked list
 void clear(linkedList *list){
   node *current = list->head;
 
