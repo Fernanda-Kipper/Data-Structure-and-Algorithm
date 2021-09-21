@@ -18,6 +18,12 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 - Insertion Sort - Algorithm
 - Stack - Data Structure 
   - Last in First Out
+- Queue - Data structure
+  - First in first out
+  - Descending order queue
+- Linked Lists - Data Structure
+  - Doubly Linked Lists
+  - Simple Linked Lists
 
 <h2 id="clone" >Clone this project</h2>
 
