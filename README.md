@@ -15,15 +15,19 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 
 <h2 id="learnings">Learnings</h2>
 
-- Insertion Sort - Algorithm
-- Stack - Data Structure 
-  - Last in First Out
-- Queue - Data structure
-  - First in first out
-  - Descending order queue
-- Linked Lists - Data Structure
-  - Doubly Linked Lists
-  - Simple Linked Lists
+### Algorithm
+  - Insertion Sort
+### Data Structure 
+  - Stack 
+    - Last in First Out
+  - Queue
+    - First in first out
+    - Descending order queue
+  - Linked Lists
+    - Doubly Linked Lists
+    - Simple Linked Lists
+  - Binary Trees
+    - Binary search trees
 
 <h2 id="clone" >Clone this project</h2>
 
