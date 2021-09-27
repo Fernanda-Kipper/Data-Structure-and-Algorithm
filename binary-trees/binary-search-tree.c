@@ -52,15 +52,14 @@ node * insert(node *currentNode, int data){
 
 /* Given a tree, return the node
    with MINIMUM value value found in that tree. */
-node * minValueNode(struct node* node)
-{ 
-    struct node* current = node;
- 
-    //1. Loop to found the smaller leaf in left side
-    while (current && current->left != NULL)
-        current = current->left;
- 
-    return current;
+node * minValueNode(node * root){ 
+  node *currentNode = root;
+
+  //1. Loop to found the smaller leaf in left side
+  while (currentNode && currentNode->left != NULL)
+      currentNode = currentNode->left;
+
+  return currentNode;
 }
 
 node * delete(node *currentNode, int data)
@@ -99,7 +98,7 @@ node * delete(node *currentNode, int data)
         // Get successor - (smallest in the right subtree)
         node *temp = minValueNode(currentNode->right);
  
-        // Copy the successor's daata to this node
+        // Copy the successor's data to this node
         currentNode->data = temp->data;
  
         // Deletes the successor node
