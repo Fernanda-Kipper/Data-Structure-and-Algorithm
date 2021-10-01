@@ -30,13 +30,19 @@ We can remove a node at any position, but **we cannot at a node in any position*
 
 <p align="center"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Diagram1.png" width="400px"/></p>
 
-## Complexity
+### Complexity
 
-### Search
+#### Search
 
-#### Being N the height of a tree
+##### Being N the height of a tree
 
 Case | Complexity | Explanation | When happens
 --- | --- | --- | --- |
 Worst |  **O(n)** | Function will need to pass all level of tree to find the node | When the node searched is the leaf of a branch
 Best | **O(log2n) + 1** | Function will stop in some level of the tree (n/2 if is the in middle, n/2/2 if is the middle of middle...)| When the node searched is not the leaf
+
+## AVL Tree
+"AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees cannot be more than one for all nodes."
+It follows the same properties as regular BST´s but they have a balance algorithm to avoid difference between height subtrees
+
+<p align="center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/AVL_INSERTION2-1.jpg" width="400px"/></p>
