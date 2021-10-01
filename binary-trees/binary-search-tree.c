@@ -171,11 +171,7 @@ int main(){
     case 1:
       printf("\nINSERT: ");
       scanf("%d", &data);
-      //2. If its the first to be added, root receives the pointer of first node
-      if(root == NULL){
-        root = insert(root, data);
-      }
-      insert(root, data);
+      root = insert(root, data);
       break;
     case 2:
       if(empty(root) == 0){
