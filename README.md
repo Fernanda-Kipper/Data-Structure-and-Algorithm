@@ -15,9 +15,9 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 
 <h2 id="learnings">Learnings</h2>
 
-### Algorithm
+### Algorithms
   - Insertion Sort
-### Data Structure 
+### Data Structures
   - Stack 
     - Last in First Out
   - Queue
@@ -27,7 +27,8 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
     - Doubly Linked Lists
     - Simple Linked Lists
   - Binary Trees
-    - Binary search trees
+    - Binary Search Trees
+    - AVL Trees
 
 <h2 id="clone" >Clone this project</h2>
 
