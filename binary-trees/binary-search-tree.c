@@ -62,49 +62,48 @@ node * minValueNode(node * root){
   return currentNode;
 }
 
-node * delete(node *currentNode, int data)
-{
+node * delete(node *currentNode, int data){
   if (currentNode == NULL)
       return currentNode;
 
-    // 1.If the data to be deleted
-    // is smaller than the currentNode data
-    // then it go to left subtree
-    if (data < currentNode->data)
-        currentNode->left = delete(currentNode->left, data);
- 
-    // 1.If the data to be deleted
-    // is greather than the currentNode data
-    // then it go to right subtree
-    else if (data > currentNode->data)
-        currentNode->right = delete(currentNode->right, data);
- 
-    // if key is same as currentNode data,
-    // then currentNode IS THE ONE TO BE DELETED
-    else if(data == currentNode->data){
-        // node with only one child or no child
-        if (currentNode->left == NULL) {
-            node *temp = currentNode->right;
-            free(currentNode);
-            return temp;
-        }
-        else if (currentNode->right == NULL) {
-            node* temp = currentNode->left;
-            free(currentNode);
-            return temp;
-        }
- 
-        // node with two children:
-        // Get successor - (smallest in the right subtree)
-        node *temp = minValueNode(currentNode->right);
- 
-        // Copy the successor's data to this node
-        currentNode->data = temp->data;
- 
-        // Deletes the successor node
-        currentNode->right = delete(currentNode->right, temp->data);
-    }
-    return currentNode;
+  // 1.If the data to be deleted
+  // is smaller than the currentNode data
+  // then it go to left subtree
+  if (data < currentNode->data)
+      currentNode->left = delete(currentNode->left, data);
+
+  // 1.If the data to be deleted
+  // is greather than the currentNode data
+  // then it go to right subtree
+  else if (data > currentNode->data)
+      currentNode->right = delete(currentNode->right, data);
+
+  // if key is same as currentNode data,
+  // then currentNode IS THE ONE TO BE DELETED
+  else if(data == currentNode->data){
+      // node with only one child or no child
+      if (currentNode->left == NULL) {
+          node *temp = currentNode->right;
+          free(currentNode);
+          return temp;
+      }
+      else if (currentNode->right == NULL) {
+          node* temp = currentNode->left;
+          free(currentNode);
+          return temp;
+      }
+
+      // node with two children:
+      // Get successor - (smallest in the right subtree)
+      node *temp = minValueNode(currentNode->right);
+
+      // Copy the successor's data to this node
+      currentNode->data = temp->data;
+
+      // Deletes the successor node
+      currentNode->right = delete(currentNode->right, temp->data);
+  }
+  return currentNode;
 }
 
 int empty(node *root){
@@ -177,7 +176,7 @@ int main(){
       if(empty(root) == 0){
         printf("\nREMOVE: ");
         scanf("%d", &data);
-        delete(root, data);
+        root = delete(root, data);
       }
       break;
     case 3:
