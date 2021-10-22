@@ -18,6 +18,7 @@ This repository has the aim to store knowledge's about Algorithm and Data Struct
 ### Algorithms
   - Insertion Sort
   - Selection Sort
+  - Quick Sort
 ### Data Structures
   - Stack 
     - Last in First Out
