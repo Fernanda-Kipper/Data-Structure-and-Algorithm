@@ -9,3 +9,5 @@ the algorithm swaps them, one staying in place of the other, then go to the next
 Case | Complexity | Explanation | When happens
 --- | --- | --- | --- |
 Worst & Best |  **O(n ** 2)** | The algorithm will always need to go till the end of the array on the second *for loop* to be sure that the element being analised is smaller then the others next him | Always
+
+### Note that is algorithm is stable, same time complexity for all inputs
